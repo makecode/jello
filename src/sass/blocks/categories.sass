@@ -1,0 +1,43 @@
+.categories
+  margin-bottom: 30px
+  width: 300px
+  box-sizing: border-box
+
+  &__list
+    margin-top: 4px
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+
+  &__el
+    width: 50%
+    height: 30px
+    line-height: 30px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+    &:hover
+      background-color: #f2f4f5
+
+  &__link
+    color: $text
+    letter-spacing: -.2px
+    transition: all .3s ease-in-out
+
+    .icon
+      margin-right: 3px
+      vertical-align: middle
+      font-size: 18px
+      color: #66bb6a
+
+    &:hover
+      text-decoration: none
+      
+  &.is-blue
+    .icon
+      color: #42a5f5
+
+  &.is-orange
+    .icon
+      color: #fb8c00

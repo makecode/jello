@@ -1,0 +1,117 @@
+//write here your sass
+//+font(roboto-light, roboto-light)
+//+font(roboto-regular, roboto-regular)
+//+font(roboto-bold, roboto-bold)
+
++font(jello-icons, jello-icons)
+
+=regular
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 400
+
+=semibold
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif
+  font-weight: 600
+
+$text: #37474f
+$textGrey: #919090
+$link: #0288d1
+$border: #d9dadb
+$btnGreen: #85cc16
+$btnGreenHover: #8cd120
+
+body
+  display: flex
+  flex-direction: column
+  min-width: 1050px
+  font-size: 13px
+  line-height: 1.4
+  color: $text
+  +regular
+
+h1
+  font-size: 46px
+  color: $text
+  +semibold
+
+  &.is-fz-32
+    font-size: 32px
+
+h3
+  font-size: 18px
+  color: $text
+  +semibold
+
+a
+  color: $link
+  display: inline-block
+  text-decoration: none
+  cursor: pointer
+  transition: all .3s ease-in-out
+
+  &:active,
+  &:focus,
+  &:visited
+    text-decoration: none
+
+img
+  display: inline-flex
+  max-width: 100%
+  height: auto
+
+.logo
+  display: inline-block
+
+  &__img
+    width: 120px
+
+.section
+  display: flex
+
+  &__left
+    width: 71%
+    margin-right: 20px
+
+  &__right
+    width: 29%
+
+.aside
+  &__title
+    display: block
+    color: $text
+    letter-spacing: -.3px
+    padding-bottom: 8px
+    border-bottom: 1px solid $border
+
+.info
+  &__text
+    margin-bottom: 25px
+
+.content
+  padding-top: 30px
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__left
+    width: 71%
+    margin-right: 20px
+
+  &__right
+    width: 29%
+
+.posts
+
+  &__list
+    margin-top: 10px
+    display: flex
+    flex-direction: column
+
+  &__el
+    margin-bottom: 15px
+
+  &__link
+    line-height: -.8px
+    color: $text
