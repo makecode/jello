@@ -1,4 +1,5 @@
 //=include libs/jquery.min.js
+//=include libs/rateit.js
 'use strict';
 
 $( document ).ready(() => {

@@ -1,0 +1,42 @@
+.app
+  display: flex
+  align-items: center
+
+  &__left
+    margin-right: 15px
+
+  &__icon
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 58px
+    height: 58px
+
+    img
+      max-height: 58px
+      max-width: 58px
+
+  &__img
+    position: relative
+
+  &__name
+    display: block
+    font-size: 15px
+    color: $text
+    +semibold
+
+  &__descr
+    color: $textGrey
+
+  &.is-paid
+    .app__icon
+      &::after
+        position: absolute
+        content: ''
+        top: 0
+        right: 0
+        background-image: url('../img/ico_badge.png')
+        background-size: cover
+        width: 20px
+        height: 20px

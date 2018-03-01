@@ -1,5 +1,20 @@
-.items
+.apps
   margin-bottom: 40px
+
+  &.is-medium
+    .apps__el
+      width: 25%
+    .app__icon
+      width: 80px
+      height: 80px
+
+      img
+        max-height: 80px
+        max-width: 80px
+
+  &.is-16per
+    .apps__el
+      width: 16%
 
   &__top
     display: flex
@@ -25,7 +40,7 @@
     color: $text
 
   &.is-small
-    .item
+    .app
       display: flex
       flex-direction: column
 
