@@ -16,7 +16,7 @@
     bottom: 0
     left: 0
     right: 0
-    background: url('/img/backgr_main_page.png') right no-repeat
+    background: url('../img/backgr_main_page.png') right no-repeat
     background-size: cover
 
   &__wrap
@@ -28,11 +28,17 @@
     display: flex
     justify-content: space-between
     height: 60px
-    line-height: 60px
 
   &__bottom
     padding-top: 20px
     padding-bottom: 80px
+    display: flex
+    justify-content: center
+
+  &__left,
+  &__right
+    display: flex
+    align-items: center
 
 .footer
   border-top: 1px solid $border

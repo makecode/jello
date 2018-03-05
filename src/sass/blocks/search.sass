@@ -1,54 +1,77 @@
 .search
   position: relative
-  width: 250px
+  display: flex
+  width: 100%
+  cursor: text
 
   &__form
     display: flex
+    flex-wrap: nowrap
     flex-direction: row
+    align-items: center
+    width: 100%
 
   &__input
     display: block
-    padding-left: 10px
-    padding-right: 36px
+    padding-left: 45px
+    padding-right: 20px
     width: 100%
-    height: 40px
-    line-height: 40px
-    background-color: #fff
-    border: 1px solid $border
-    color: #99a1a8
-    font-size: 16px
+    height: 50px
+    line-height: 50px
+    font-size: 15px
+    color: #919191
+    border: none
+    letter-spacing: -.3px
+    box-sizing: border-box
+    transition: all .3s ease-in-out
     +regular
+
+    &:focus
+      outline: none
 
   &__ico
     position: absolute
-    right: 10px
-    top: 10px
+    width: 18px
+    top: 13px
+    left: 12px
 
-  &.is-general
-    width: 100%
+  &.is-small
+    position: relative
+    width: 220px
 
-    .search
+    &:hover
+      .search__input
+        padding: 0 10px
+        width: calc(100% - 30px)
 
-      &__form
-        align-items: center
+      .search__btn
+        background-color: $btnGreen
 
-      &__ico
-        width: 18px
-        top: 16px
-        left: 16px
+    .search__input
+      padding: 0
+      width: 0
+      height: 30px
+      line-height: 30px
 
-      &__input
-        padding-left: 45px
-        padding-right: 20px
-        width: 100%
-        height: 50px
-        line-height: 50px
-        font-size: 16px
-        color: #99a1a8
-        border: none
-        letter-spacing: -.3px
-        box-sizing: border-box
-        +regular
+      &:focus
+        padding: 0 10px
+        width: calc(100% - 30px)
 
-        &:focus
-          outline: none
+      &:focus ~ .search__btn
+        background-color: $btnGreen
+
+    .search__btn
+      padding: 0
+      width: 30px
+      height: 30px
+      border: none
+      background-color: transparent
+      box-sizing: border-box
+      cursor: pointer
+
+      span
+        color: #fff
+        font-size: 18px
+
+
+

@@ -20,34 +20,44 @@
           <div class="header__left">
             <div class="logo">
               <a href="#" class="logo__link">
-                <img src="../img/logo_head.svg" alt="logo-JelloApps" class="logo__img">
+                <img src="img/logo_head.svg" alt="logo-JelloApps" class="logo__img">
               </a>
             </div>
+            <div class="search is-small i-ml-20">
+              <form class="search__form" action="#">
+                <input class="search__input"
+                       type="text"
+                       placeholder="Find any apps">
+                <button type="submit" class="search__btn">
+                  <span class="icon icon-search"></span>
+                </button>
+              </form>
+            </div><!-- end search -->
           </div>
           <div class="header__right">
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__el">
                   <a href="#" class="nav__link">
-                    <span class="ico is-app"></span>
+                    <span class="icon icon-apps"></span>
                     <span class="nav__name">Apps</span>
                   </a>
                 </li>
                 <li class="nav__el">
                   <a href="#" class="nav__link">
-                    <span class="ico is-game"></span>
+                    <span class="icon icon-game"></span>
                     Games
                   </a>
                 </li>
                 <li class="nav__el">
                   <a href="#" class="nav__link">
-                    <span class="ico is-rington"></span>
+                    <span class="icon icon-rington"></span>
                     Ringtons
                   </a>
                 </li>
                 <li class="nav__el">
                   <a href="#" class="nav__link">
-                    <span class="ico is-post"></span>
+                    <span class="icon icon-post"></span>
                     Posts
                   </a>
                 </li>
@@ -59,7 +69,7 @@
           <div class="general-banner">
             <h1 class="title general-banner__title">Best Apps & Games Collection</h1>
             <p class="general-banner__subtitle">App Downloads for Android, iOS & Windows Phone</p>
-            <div class="search is-general">
+            <div class="search">
               <form class="search__form" action="#">
                 <span class="search__ico">
                   <i class="ico is-search"></i>
@@ -83,176 +93,174 @@
     <div class="container">
       <section class="content is-main">
         <div class="content__wrap">
-          <div class="section__left">
+          <div class="content__left">
+            <div class="block-header">
+              <div class="block-header__left">
+                <a class="block-header__link" href="#"><h3 class="block-header__title">Top Apps</h3></a>
+              </div>
+              <div class="block-header__right">
+                <a href="#" class="block-header__link">More &raquo;</a>
+              </div>
+            </div>
             <div class="apps">
-              <div class="apps__top">
-                <div class="apps__left">
-                  <a class="apps__link" href="#"><h3 class="title">Top Apps</h3></a>
-                </div>
-                <div class="apps__right">
-                  <a href="#" class="apps__more">More &raquo;</a>
-                </div>
-              </div>
-              <div class="apps__bottom">
-                <ul class="apps__list">
-                  <li class="apps__el">
-                    <a href="#" class="app is-paid">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img class="app__img" src="img/ico_google.png" alt="ico_google">
-                        </div>
+              <ul class="apps__list">
+                <li class="apps__el">
+                  <a href="#" class="app is-paid">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img class="app__img" src="img/ico_google.png" alt="ico_google">
                       </div>
-                      <div class="app__right">
-                        <span class="app__name">Google Play Store</span>
-                        <span class="app__descr">Tools</span>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Google Play Store</span>
+                      <span class="app__descr">Tools</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app is-paid">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img class="app__img" src="img/ico_box.png" alt="ico_box">
                       </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app is-paid">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img class="app__img" src="img/ico_box.png" alt="ico_box">
-                        </div>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Show Box</span>
+                      <span class="app__descr">Entertainment</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_zedge.png" alt="ico_zedge">
                       </div>
-                      <div class="app__right">
-                        <span class="app__name">Show Box</span>
-                        <span class="app__descr">Entertainment</span>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Zedge</span>
+                      <span class="app__descr">Personalization</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_amazon.png" alt="ico_amazon">
                       </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_zedge.png" alt="ico_zedge">
-                        </div>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Amazon Alexa</span>
+                      <span class="app__descr">Music & Audio</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_snapchat.png" alt="ico_snapchat">
                       </div>
-                      <div class="app__right">
-                        <span class="app__name">Zedge</span>
-                        <span class="app__descr">Personalization</span>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Snapchat</span>
+                      <span class="app__descr">Communication</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_snaptube.png" alt="ico_snapTube">
                       </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_amazon.png" alt="ico_amazon">
-                        </div>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">SnapTube</span>
+                      <span class="app__descr">Tools</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_googleplay.png" alt="ico_googleplay">
                       </div>
-                      <div class="app__right">
-                        <span class="app__name">Amazon Alexa</span>
-                        <span class="app__descr">Music & Audio</span>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Google Play Store</span>
+                      <span class="app__descr">Tools</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_n.png" alt="ico">
                       </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_snapchat.png" alt="ico_snapchat">
-                        </div>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Show Box</span>
+                      <span class="app__descr">Entertainment</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_hang.png" alt="ico_hangouts">
                       </div>
-                      <div class="app__right">
-                        <span class="app__name">Snapchat</span>
-                        <span class="app__descr">Communication</span>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Zedge</span>
+                      <span class="app__descr">Personalization</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_imo.png" alt="ico_imo">
                       </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_snaptube.png" alt="ico_snapTube">
-                        </div>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Amazon Alexa</span>
+                      <span class="app__descr">Music & Audio</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_youtube.png" alt="ico_youtube">
                       </div>
-                      <div class="app__right">
-                        <span class="app__name">SnapTube</span>
-                        <span class="app__descr">Tools</span>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">Snapchat</span>
+                      <span class="app__descr">Communication</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="apps__el">
+                  <a href="#" class="app">
+                    <div class="app__left">
+                      <div class="app__icon">
+                        <img src="img/ico_snap.png" alt="ico_snap">
                       </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_googleplay.png" alt="ico_googleplay">
-                        </div>
-                      </div>
-                      <div class="app__right">
-                        <span class="app__name">Google Play Store</span>
-                        <span class="app__descr">Tools</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_n.png" alt="ico">
-                        </div>
-                      </div>
-                      <div class="app__right">
-                        <span class="app__name">Show Box</span>
-                        <span class="app__descr">Entertainment</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_hang.png" alt="ico_hangouts">
-                        </div>
-                      </div>
-                      <div class="app__right">
-                        <span class="app__name">Zedge</span>
-                        <span class="app__descr">Personalization</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_imo.png" alt="ico_imo">
-                        </div>
-                      </div>
-                      <div class="app__right">
-                        <span class="app__name">Amazon Alexa</span>
-                        <span class="app__descr">Music & Audio</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_youtube.png" alt="ico_youtube">
-                        </div>
-                      </div>
-                      <div class="app__right">
-                        <span class="app__name">Snapchat</span>
-                        <span class="app__descr">Communication</span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="apps__el">
-                    <a href="#" class="app">
-                      <div class="app__left">
-                        <div class="app__icon">
-                          <img src="img/ico_snap.png" alt="ico_snap">
-                        </div>
-                      </div>
-                      <div class="app__right">
-                        <span class="app__name">SnapTube</span>
-                        <span class="app__descr">Tools</span>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    </div>
+                    <div class="app__right">
+                      <span class="app__name">SnapTube</span>
+                      <span class="app__descr">Tools</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div><!-- end apps -->
             <div class="apps">
               <div class="apps__top">
@@ -1025,7 +1033,7 @@
         <div class="footer__left">
           <div class="logo">
             <a href="#" class="logo__link">
-              <img src="../img/logo_foot.svg" alt="logo-JelloApps" class="logo__img">
+              <img src="img/logo_foot.svg" alt="logo-JelloApps" class="logo__img">
             </a>
           </div>
         </div>

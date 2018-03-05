@@ -17,8 +17,8 @@ $text: #37474f
 $textGrey: #919090
 $link: #0288d1
 $border: #d9dadb
-$btnGreen: #85cc16
-$btnGreenHover: #8cd120
+$btnGreen: #7cc110
+$btnGreenHover: #85cb18
 
 body
   display: flex
@@ -37,8 +37,13 @@ h1
   &.is-fz-32
     font-size: 32px
 
+h2
+  font-size: 26px
+  +semibold
+
 h3
   font-size: 18px
+  letter-spacing: -.5px
   color: $text
   +semibold
 
@@ -59,11 +64,15 @@ img
   max-width: 100%
   height: auto
 
+.i-ml-20
+  margin-left: 20px
+
 .logo
   display: inline-block
 
   &__img
     width: 120px
+    display: flex
 
 .section
   display: flex
@@ -76,6 +85,7 @@ img
     width: 29%
 
 .aside
+
   &__title
     display: block
     color: $text
@@ -85,26 +95,9 @@ img
 
 .info
   &__text
-    margin-bottom: 25px
+    margin-bottom: 18px
 
-.content
-  padding-top: 30px
-  padding-bottom: 50px
-
-  &__wrap
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-
-  &__left
-    width: 71%
-    margin-right: 20px
-
-  &__right
-    width: 29%
-
-  &__top
+.product
+  &__logo
     margin-bottom: 10px
 
-  &__title
-    position: relative

@@ -2,13 +2,12 @@
   flex-direction: row
   text-align: center
   display: flex
-  flex-shrink: 0
-  width: 320px
-  height: 70px
-  line-height: 70px
+  justify-content: center
+  width: 130px
+  height: 35px
+  line-height: 35px
   color: #fff
   background-color: $btnGreen
-  font-size: 24px
   white-space: nowrap
   transition: all .3s ease-in-out
   cursor: pointer
@@ -20,9 +19,10 @@
     text-decoration: none
 
   &.is-search
+    padding: 0 10px
     display: block
     text-align: center
-    width: 160px
+    width: 136px
     height: 50px
     line-height: 50px
     font-size: 18px
@@ -37,6 +37,12 @@
     &:focus
       outline: none
 
+  &.is-blue
+    background-color: #46a7bb
+
+    &:hover
+      background-color: #45b2c9
+
   &.is-download
     display: inline-flex
     align-items: center
@@ -47,3 +53,8 @@
 
     .btn__text
       margin-left: 20px
+
+  &.is-large
+    width: 130px
+    font-size: 15px
+    +semibold

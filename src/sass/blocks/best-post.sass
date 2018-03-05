@@ -5,11 +5,13 @@
     flex-direction: column
 
   &__el
+    width: 100%
     overflow: hidden
-    padding: 12px 0 15px
+    padding: 10px 0
     border-bottom: 1px solid $border
-    transition: all .25s ease
 
     &:hover
-      padding-left: 10px
       background-color: #fafafa
+
+      .collection
+        transform: translateX(10px)

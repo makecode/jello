@@ -1,0 +1,32 @@
+.content
+  padding-top: 34px
+  padding-bottom: 50px
+
+  &__wrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+  &__left
+    width: 71%
+    margin-right: 20px
+
+  &__right
+    width: 29%
+
+  &__top
+    margin-bottom: 15px
+
+  &__title
+    position: relative
+    letter-spacing: -.6px
+    &.is-paid
+      &::after
+        position: absolute
+        content: ''
+        top: 0
+        right: 0
+        background-image: url('../img/ico_badge.png')
+        background-size: cover
+        width: 40px
+        height: 40px

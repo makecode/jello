@@ -16,14 +16,6 @@
     .apps__el
       width: 16%
 
-  &__top
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
-    padding-bottom: 8px
-    border-bottom: 1px solid $border
-
   &__list
     margin-top: 10px
     display: flex
@@ -32,18 +24,21 @@
     justify-content: space-between
 
   &__el
-    width: 30%
+    width: 33%
     margin-bottom: 16px
 
-  &__link,
-  &__more
-    color: $text
-
   &.is-small
+    margin-top: 22px
+    margin-bottom: 0
+
+    .apps__el
+      margin-bottom: 15px
+
     .app
       display: flex
       flex-direction: column
 
       &__name
+        margin-top: 4px
         font-size: 13px
         text-align: center
