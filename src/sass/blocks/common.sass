@@ -77,16 +77,6 @@ img
     width: 120px
     display: flex
 
-//.section
-//  display: flex
-//
-//  &__left
-//    width: 71%
-//    margin-right: 20px
-//
-//  &__right
-//    width: 29%
-
 .aside
 
   &__title
@@ -133,4 +123,34 @@ img
 
   &__icon
     font-size: 18px
+
+.captcha
+  padding-bottom: 10px
+  display: flex
+  align-items: center
+  position: relative
+  border-bottom: 1px solid $border
+
+  &__img
+    margin-right: 30px
+    width: 64px
+    height: 64px
+
+  &__form
+    display: flex
+
+  &__input
+    margin: 0 16px
+    padding: 0 10px
+    width: 120px
+    height: 35px
+    line-height: 35px
+    font-size: 15px
+    box-sizing: border-box
+    +regular
+
+  &__icon
+    position: absolute
+    bottom: 0
+    right: 0
 

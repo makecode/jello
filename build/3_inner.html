@@ -85,7 +85,25 @@
             <div class="block-header">
               <a class="block-header__link" href="#"><h3 class="block-header__title">Type The Characters To Download</h3></a>
             </div>
-            <div class="captcha"></div>
+            <div class="captcha">
+              <img src="img/logo_skype.png" alt="logo-skype" class="captcha__img">
+              <form action="#" method="post" class="captcha__form">
+                <span>
+                  <a href="#">
+                    <img src="img/captcha.png" alt="captcha">
+                  </a>
+                </span>
+                <label for="vertext">
+                  <input class="captcha__input" type="text" name="verify" id="vertext">
+                </label>
+                <label for="versubmit">
+                  <input class="btn" type="submit" value="Verify" id="versubmit">
+                </label>
+              </form>
+              <span class="captcha__icon">
+                <span class="ico is-arrow-down-right"></span>
+              </span>
+            </div><!-- end captcha -->
             <div class="banner">
               <a href="#" target="_blank" class="banner__link">
                 <img class="banner__img" src="img/banner_2.png" alt="banner">

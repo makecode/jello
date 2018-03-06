@@ -3,20 +3,47 @@
   text-align: center
   display: flex
   justify-content: center
-  width: 130px
+  padding: 0 26px
   height: 35px
   line-height: 35px
+  min-width: 120px
+  font-size: 15px
   color: #fff
   background-color: $btnGreen
+  border: 1px solid $btnGreen
   white-space: nowrap
   transition: all .3s ease-in-out
   cursor: pointer
   overflow: hidden
+  box-sizing: border-box
+  +semibold
 
   &:hover,
   &:focus,
   &:visited
     text-decoration: none
+
+  &.is-large
+    padding: 0
+    display: flex
+    align-items: center
+    width: 334px
+    height: 62px
+    line-height: 62px
+    box-sizing: border-box
+
+    .btn__text
+      margin-left: 25px
+      font-size: 26px
+
+  &.is-small
+    padding: 0
+    width: 96px
+    height: 28px
+    font-size: 13px
+    line-height: 26px
+    min-width: 96px
+    box-sizing: border-box
 
   &.is-search
     padding: 0 10px
@@ -40,8 +67,8 @@
   &.is-blue
     background-color: #46a7bb
 
-    &:hover
-      background-color: #45b2c9
+    //&:hover
+    //  background-color: #45b2c9
 
   &.is-download
     display: inline-flex
@@ -54,7 +81,18 @@
     .btn__text
       margin-left: 20px
 
-  &.is-large
-    width: 130px
-    font-size: 15px
-    +semibold
+  &.is-transparent
+    background-color: transparent
+
+    &.is-green
+      color: $btnGreen
+
+    &.is-blue
+      border-color: #0288d1
+      color: #0288d1
+
+    &.is-grey
+      border-color: #757575
+      color: #757575
+
+
