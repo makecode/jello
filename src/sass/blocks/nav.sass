@@ -5,23 +5,27 @@
     flex-direction: row
 
   &__el
-    margin-right: 32px
-    letter-spacing: -.3px
+    margin-right: 30px
 
     &:last-child
       margin-right: 0
 
   &__link
     font-size: 16px
+    letter-spacing: -.6px
     color: #ffffff
     +semibold
-
-    .icon
-      vertical-align: middle
 
     &:hover,
     &:active
       color: #c9ee33
+
+    .icon
+      vertical-align: middle
+      font-size: 18px
+
+  &__name
+    margin-left: 5px
 
   &.is-footer
 
@@ -36,7 +40,7 @@
           position: absolute
           content: ''
           top: 3px
-          right: 10px
+          right: 9px
           width: 1px
           height: 13px
           background-color: #9ba1a4
@@ -49,6 +53,7 @@
 
       &__link
         font-size: 13px
+        letter-spacing: -.2px
         color: $text
         text-transform: capitalize
         +regular

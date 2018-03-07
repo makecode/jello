@@ -1,0 +1,44 @@
+.list
+  display: flex
+  flex-direction: row
+
+  &.is-vertical
+    flex-direction: column
+
+    .list
+
+      &__el
+        position: relative
+        padding-left: 12px
+
+        &:after
+          position: absolute
+          top: 8px
+          left: 1px
+          content: ''
+          width: 3px
+          height: 3px
+          border-radius: 50%
+          background-color: $text
+
+  &.is-mark
+    margin: 0
+    flex-direction: column
+
+    .list
+
+      &__el
+        position: relative
+        padding-left: 8px
+        margin-bottom: 0
+
+        &:after
+          position: absolute
+          top: 9px
+          left: 0
+          content: ''
+          width: 4px
+          height: 1px
+          background-color: $text
+
+
