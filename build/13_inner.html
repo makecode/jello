@@ -13,12 +13,55 @@
 </head>
 
 <body>
+<div class="mobile-menu">
+  <div class="mobile-menu__top"></div>
+  <div class="mobile-menu__bottom">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-apps"></span>
+          <span class="mobile-menu__name">Home</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-apps"></span>
+          <span class="mobile-menu__name">Apps</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-game"></span>
+          <span class="mobile-menu__name">Games</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-rington"></span>
+          <span class="mobile-menu__name">Ringtons</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-post"></span>
+          <span class="mobile-menu__name">Posts</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div><!-- end mobile-menu -->
+
 <header class="header">
   <div class="header__bg"></div>
   <div class="container">
     <div class="header__wrap">
       <div class="header__top">
         <div class="header__left">
+          <div class="hamburger" id="hamburger">
+            <span class="hamburger__el"></span>
+            <span class="hamburger__el"></span>
+            <span class="hamburger__el"></span>
+          </div>
           <div class="logo">
             <a href="#" class="logo__link">
               <img src="img/logo_head.svg" alt="logo-JelloApps" class="logo__img">
@@ -64,9 +107,24 @@
               </li>
             </ul>
           </nav>
+          <button class="btn mobile-search" id="btn-search-mobile" type="button">
+            <span class="icon icon-search"></span>
+          </button>
         </div>
       </div>
     </div>
+  </div>
+  <div class="search is-mobile is-visible" id="search-mobile">
+    <form class="search__form" action="#">
+      <input class="search__input"
+             type="text"
+             placeholder="Find any apps">
+      <div class="search__action">
+        <button class="btn is-search" type="button">
+          Search
+        </button>
+      </div>
+    </form>
   </div>
 </header>
 <main class="main">
@@ -112,16 +170,20 @@
                 </div>
                 <div class="software__center">
                   <div class="software__left">
-                    <a class="btn is-large is-transparent is-green" href="#">
-                      <span class="icon icon-android"></span>
-                      <span class="btn__text">$2.99 From Google Play</span>
-                    </a>
+                    <div class="software__action">
+                      <a class="btn is-large is-transparent is-green" href="#">
+                        <span class="icon icon-android"></span>
+                        <span class="btn__text">$2.99 From Google Play</span>
+                      </a>
+                    </div>
                   </div>
                   <div class="software__right">
-                    <a class="btn is-large is-transparent is-grey" href="#">
-                      <span class="icon icon-apple"></span>
-                      <span class="btn__text">$2.99 From App Store</span>
-                    </a>
+                    <div class="software__action">
+                      <a class="btn is-large is-transparent is-grey" href="#">
+                        <span class="icon icon-apple"></span>
+                        <span class="btn__text">$2.99 From App Store</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div class="software__bottom">

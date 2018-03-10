@@ -2,6 +2,17 @@
   position: relative
   margin: 0 auto
   width: 1050px
+  box-sizing: border-box
+
+  +m(1200)
+    width: 970px
+
+  +m(1024)
+    width: 750px
+    padding: 0 20px
+
+  +m(768)
+    width: 100%
 
 .main
   flex: 1 1 auto
@@ -10,35 +21,67 @@
 .header
   position: relative
 
-  &__bg
-    position: absolute
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background: url('../img/backgr_main_page.png') right no-repeat
-    background-size: cover
+  //&__bg
+  //  position: absolute
+    //top: 0
+    //bottom: 0
+    //left: 0
+    //right: 0
+  background: url('../img/backgr_main_page.png') right no-repeat
+  background-size: cover
 
   &__wrap
     display: flex
     flex-direction: column
     justify-content: space-between
 
+    +m(768)
+      .logo
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 6
+
   &__top
+    position: relative
     display: flex
     justify-content: space-between
     height: 60px
 
   &__bottom
-    padding-top: 20px
+    padding-top: 48px
     padding-bottom: 80px
     display: flex
     justify-content: center
+
+    +m(768)
+      padding: 0
 
   &__left,
   &__right
     display: flex
     align-items: center
+
+  &__left
+
+  .hamburger
+    display: none
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+
+    +m(768)
+      display: inline-block
+      z-index: 6
+
+  .mobile-search
+    display: none
+
+    +m(768)
+      display: inline-block
+
 
 .footer
   border-top: 1px solid $border
@@ -50,3 +93,7 @@
     justify-content: space-between
     align-items: center
     align-content: center
+
+    +m(768)
+      display: flex
+      flex-direction: column

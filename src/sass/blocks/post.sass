@@ -1,12 +1,23 @@
 .post
   margin-top: 10px
 
+  &__top
+    width: 100%
+
+  +m(1024)
+    &__top,
+    &__bottom
+      width: 50%
+
   &__title
     font-size: 14px
     +semibold
 
   &__link
     color: $text
+
+    +m(1024)
+      display: flex
 
   &__descr
     margin-top: 10px

@@ -1,5 +1,5 @@
 .content
-  padding-top: 34px
+  padding-top: 30px
   padding-bottom: 50px
 
   &__wrap
@@ -7,12 +7,23 @@
     flex-direction: row
     justify-content: space-between
 
+    +m(1024)
+      display: flex
+      flex-direction: column
+
   &__left
     width: 71%
     margin-right: 20px
 
+    +m(1024)
+      width: 100%
+      margin-right: 0
+
   &__right
     width: 29%
+
+    +m(1024)
+      width: 100%
 
   &__top
     margin-bottom: 15px
@@ -39,12 +50,30 @@
     .icon
       width: 40px
       height: 40px
-      font-size: 32px
-      margin-right: 15px
+      font-size: 36px
+      margin-right: 10px
+
+  &.is-inner-1
+    .software
+      &__left
+        width: 45%
+      &__right
+        width: 55%
 
   &.is-inner-8
+    padding-top: 25px
+
+    .content__title
+      margin-bottom: 27px
+
     .block-header
       padding-bottom: 3px
+
+      &__icon
+        margin-right: 6px
+
+      &__title
+        letter-spacing: -.3px
 
   &.is-inner-9
     padding-top: 20px

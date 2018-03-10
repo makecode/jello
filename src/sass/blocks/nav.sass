@@ -10,6 +10,12 @@
     &:last-child
       margin-right: 0
 
+    +m(1200)
+      margin-right: 15px
+
+    +m(1024)
+      margin-right: 10px
+
   &__link
     font-size: 16px
     letter-spacing: -.6px
@@ -26,6 +32,9 @@
 
   &__name
     margin-left: 5px
+
+  +m(768)
+    display: none
 
   &.is-footer
 
@@ -57,3 +66,6 @@
         color: $text
         text-transform: capitalize
         +regular
+
+        &:hover
+          opacity: .8

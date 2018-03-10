@@ -1,0 +1,56 @@
+.mobile-menu
+  width: 264px
+  height: 100%
+  background-color: #37474f
+  position: absolute
+  top: 0
+  left: -100%
+  transition: all .35s ease-in-out
+
+  &__top
+    height: 60px
+    line-height: 60px
+
+  &__list
+    display: flex
+    flex-direction: column
+
+  &__el
+    padding-left: 20px
+    height: 52px
+    line-height: 52px
+
+    &:first-child
+      background-color: #9cc300
+
+    &:nth-child(2)
+      background-color: #59af5d
+
+    &:nth-child(3)
+      background-color: #e29818
+
+    &:nth-child(4)
+      background-color: #2e96ea
+
+    &:nth-child(5)
+      background-color: #e29818
+
+    &:last-child
+      background-color: #8a64d1
+
+  &__link
+    color: #fff
+    font-size: 18px
+    +semibold
+
+  &__name
+    margin-left: 20px
+    font-size: 16px
+    letter-spacing: -.6px
+
+  &__icon
+    font-size: 18px
+
+  &.is-open
+    left: 0
+    z-index: 5
