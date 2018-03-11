@@ -4,14 +4,31 @@
     display: flex
     flex-direction: column
 
+    +m(768)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+
   &__el
     width: 100%
     overflow: hidden
     padding: 10px 0
     border-bottom: 1px solid $border
 
+    +m(768)
+      border: none
+
     &:hover
       background-color: #fafafa
 
+      +m(768)
+        background-color: #fff
+
       .collection
         transform: translateX(10px)
+
+        +m(768)
+          transform: none
+
+    +m(768)
+      width: 50%
