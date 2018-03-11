@@ -12,6 +12,9 @@
     width: 33%
     margin-bottom: 16px
 
+    +m(768)
+      width: 50%
+
   &.is-medium
 
     .apps__el
@@ -37,11 +40,19 @@
   &.is-16per
     .apps__el
       width: 16%
+      +m(768)
+        width: 20%
+      +m(480)
+        width: 25%
 
   &.is-20per
     .apps__el
       width: 20%
       margin-bottom: 20px
+      +m(1024)
+        width: 25%
+      +m(768)
+        width: 33%
 
   &.is-small
     margin-top: 22px
@@ -49,6 +60,8 @@
 
     .apps__el
       margin-bottom: 15px
+      +m(768)
+        width: 33%
 
     .app
       display: flex
