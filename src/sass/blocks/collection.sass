@@ -1,11 +1,14 @@
 .collection
   position: relative
-  width: calc(100% - 20px)
+  //width: calc(100% - 20px)
+  width: 100%
   display: flex
   flex-direction: row
   transition: transform .2s ease-in-out
-
   +m(768)
+    flex-direction: row
+
+  +m(480)
     flex-direction: column
 
   &__left
