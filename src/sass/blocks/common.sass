@@ -67,21 +67,16 @@ a
     text-decoration: none
 
 img
-  display: inline-flex
+  display: inline-block
   max-width: 100%
   height: auto
-
-.i-ml-20
-  margin-left: 20px
-
-.i-mb-10
-  margin-bottom: 10px
 
 .banner
   margin-bottom: 20px
 
 .logo
   display: inline-block
+  line-height: 0
 
   &__img
     width: 120px
@@ -93,7 +88,12 @@ img
 
 .product
   &__logo
+    position: relative
+    width: 100%
+    min-height: 200px
     margin-bottom: 10px
+    background-size: cover
+    background-position: center center
 
 .warning
   margin: 10px 0

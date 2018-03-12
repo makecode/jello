@@ -20,13 +20,6 @@
 
 .header
   position: relative
-
-  //&__bg
-  //  position: absolute
-    //top: 0
-    //bottom: 0
-    //left: 0
-    //right: 0
   background: url('../img/backgr_main_page.png') right no-repeat
   background-size: cover
 
@@ -40,8 +33,8 @@
         position: absolute
         top: 50%
         left: 50%
-        transform: translate(-50%, -50%)
         z-index: 6
+        +center
 
   &__top
     position: relative
@@ -77,6 +70,9 @@
       display: inline-block
       z-index: 6
 
+  .search.is-small
+    margin-left: 20px
+
   .mobile-search
     display: none
 
@@ -86,7 +82,7 @@
 
 .footer
   border-top: 1px solid $border
-  padding: 30px 0
+  box-sizing: border-box
 
   &__wrap
     display: flex
@@ -94,7 +90,13 @@
     justify-content: space-between
     align-items: center
     align-content: center
+    height: 89px
 
     +m(768)
+      padding: 10px 0
       display: flex
       flex-direction: column
+
+  &__center
+    +m(768)
+      margin: 4px 0 10px

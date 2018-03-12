@@ -11,27 +11,107 @@
       <div class="content__bottom">
         <div class="content__wrap">
           <div class="content__left">
-            <div class="block-header">
-              <a class="block-header__link" href="#"><h3 class="block-header__title">Type The Characters To Download</h3></a>
-            </div>
             <div class="captcha">
-              <img src="img/logo_skype.png" alt="logo-skype" class="captcha__img">
-              <form action="#" method="post" class="captcha__form">
-                <span>
-                  <a href="#">
-                    <img src="img/captcha.png" alt="captcha">
-                  </a>
-                </span>
-                <label for="vertext">
-                  <input class="captcha__input" type="text" name="verify" id="vertext">
-                </label>
-                <label for="versubmit">
-                  <input class="btn" type="submit" value="Verify" id="versubmit">
-                </label>
-              </form>
-              <span class="captcha__icon">
-                <span class="ico is-arrow-down-right"></span>
-              </span>
+              <div class="captcha__verify">
+                <div class="captcha__error">
+                  <div class="captcha__top">
+                    <div class="block-header">
+                      <a class="block-header__link" href="#"><h3 class="block-header__title">Type The Characters To Download</h3></a>
+                    </div>
+                  </div>
+                  <div class="captcha__bottom">
+                    <img class="captcha__product-icon" src="img/logo_skype.png" alt="logo-skype">
+                    <form class="captcha__form" action="#" method="post">
+                      <span class="captcha__error-text">Wrong code. Please try again.</span>
+                      <a class="captcha__link" href="#">
+                        <img class="captcha__img" src="img/captcha.png" alt="captcha">
+                      </a>
+                      <input class="captcha__input" type="text" title="captcha" id="captcha-input">
+                      <button class="btn" type="submit" id="captcha-submit">Verify</button>
+                    </form>
+                  </div>
+                </div>
+                <div class="captcha__success">
+                  <div class="captcha__top">
+                    <div class="block-header">
+                      <a class="block-header__link" href="#"><h3 class="block-header__title">Download Now</h3></a>
+                    </div>
+                  </div>
+                  <div class="captcha__bottom">
+                    <div class="download">
+                      <img src="img/logo_skype.png" alt="logo-skype" class="download__img">
+                      <a class="btn" href="#">Click To Download</a>
+                      <a class="btn-google" href="#">
+                        <img src="img/btn_google_play.svg" alt="google_play_button">
+                      </a>
+                    </div><!-- end download -->
+                  </div>
+                </div>
+              </div>
+              <div class="captcha__verify-success-content">
+                <div class="block-header">
+                  <a class="block-header__link" href="#"><h3 class="block-header__title">Download All Versions</h3></a>
+                </div>
+                <div class="versions">
+                  <ul class="versions__list">
+                    <li class="versions__el">
+                      <div class="version">
+                        <div class="version__left">
+                          <img class="version__img" src="img/logo_skype.png" alt="logo">
+                          <a href="#" class="version__name">Skype 7.46.0.596</a>
+                        </div>
+                        <div class="version__right">
+                          <a href="#" class="version__icon icon icon-download"></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="versions__el">
+                      <div class="version">
+                        <div class="version__left">
+                          <img class="version__img" src="img/logo_skype.png" alt="logo">
+                          <a href="#" class="version__name">Skype 7.43.0.501</a>
+                        </div>
+                        <div class="version__right">
+                          <a href="#" class="version__icon icon icon-download"></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="versions__el">
+                      <div class="version">
+                        <div class="version__left">
+                          <img class="version__img" src="img/logo_skype.png" alt="logo">
+                          <a href="#" class="version__name">Skype 7.38.0.202</a>
+                        </div>
+                        <div class="version__right">
+                          <a href="#" class="version__icon icon icon-download"></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="versions__el">
+                      <div class="version">
+                        <div class="version__left">
+                          <img class="version__img" src="img/logo_skype.png" alt="logo">
+                          <a href="#" class="version__name">Skype 7.30.0.1372</a>
+                        </div>
+                        <div class="version__right">
+                          <a href="#" class="version__icon icon icon-download"></a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="versions__el">
+                      <div class="version">
+                        <div class="version__left">
+                          <img class="version__img" src="img/logo_skype.png" alt="logo">
+                          <a href="#" class="version__name">Skype 7.27.0.295</a>
+                        </div>
+                        <div class="version__right">
+                          <a href="#" class="version__icon icon icon-download"></a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div><!-- end versions -->
+              </div><!-- end captcha success -->
             </div><!-- end captcha -->
             <div class="banner">
               <a href="#" target="_blank" class="banner__link">
@@ -346,127 +426,127 @@
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-books"></span>
-                      Books & Reference
+                      <span class="categories__title">Books & Reference</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-communication"></span>
-                      Communication
+                      <span class="categories__title">Communication</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-education"></span>
-                      Education
+                      <span class="categories__title">Education</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-entertainment"></span>
-                      Entertainment
+                      <span class="categories__title">Entertainment</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-finance"></span>
-                      Finance
+                      <span class="categories__title">Finance</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-food"></span>
-                      Food & Drink
+                      <span class="categories__title">Food & Drink</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-health"></span>
-                      Health & Fitness
+                      <span class="categories__title">Health & Fitness</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-lifestyle"></span>
-                      Lifestyle
+                      <span class="categories__title">Lifestyle</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-maps"></span>
-                      Maps & Navigation
+                      <span class="categories__title">Maps & Navigation</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-music"></span>
-                      Music & Audio
+                      <span class="categories__title">Music & Audio</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-news"></span>
-                      News & Magazines
+                      <span class="categories__title">News & Magazines</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-personalization"></span>
-                      Personalization
+                      <span class="categories__title">Personalization</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-photograph"></span>
-                      Photography
+                      <span class="categories__title">Photography</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-productivity"></span>
-                      Productivity
+                      <span class="categories__title">Productivity</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-shopping"></span>
-                      Shopping
+                      <span class="categories__title">Shopping</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-social"></span>
-                      Social
+                      <span class="categories__title">Social</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-sport"></span>
-                      Sport
+                      <span class="categories__title">Sport</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-tools"></span>
-                      Tools
+                      <span class="categories__title">Tools</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-travel"></span>
-                      Travel & Local
+                      <span class="categories__title">Travel & Local</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-video"></span>
-                      Video Players & Editors
+                      <span class="categories__title">Video Players & Editors</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-weather"></span>
-                      Weather
+                      <span class="categories__title">Weather</span>
                     </a>
                   </li>
                 </ul>
@@ -479,85 +559,85 @@
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-action"></span>
-                      Action
+                      <span class="categories__title">Action</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-adventure"></span>
-                      Adventure
+                      <span class="categories__title">Adventure</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-arcade"></span>
-                      Arcade
+                      <span class="categories__title">Arcade</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-card"></span>
-                      Card
+                      <span class="categories__title">Card</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-casino"></span>
-                      Casino
+                      <span class="categories__title">Casino</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-casual"></span>
-                      Casual
+                      <span class="categories__title">Casual</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-puzzle"></span>
-                      Puzzle
+                      <span class="categories__title">Puzzle</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-racing"></span>
-                      Racing
+                      <span class="categories__title">Racing</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-roleplaying"></span>
-                      Role Playing
+                      <span class="categories__title">Role Playing</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-simulation"></span>
-                      Simulation
+                      <span class="categories__title">Simulation</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-sports"></span>
-                      Sports
+                      <span class="categories__title">Sports</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-strategy"></span>
-                      Strategy
+                      <span class="categories__title">Strategy</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-trivia"></span>
-                      Trivia
+                      <span class="categories__title">Trivia</span>
                     </a>
                   </li>
                   <li class="categories__el">
                     <a href="#" class="categories__link">
                       <span class="icon icon-words"></span>
-                      Word
+                      <span class="categories__title">Word</span>
                     </a>
                   </li>
                 </ul>
