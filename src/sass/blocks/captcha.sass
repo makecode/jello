@@ -14,6 +14,8 @@
     align-items: center
     flex-wrap: wrap
     background: url('../img/ico_arrow_down_right.png') right bottom no-repeat
+    +m(768)
+      flex-direction: column
 
   &__product-icon
     margin-right: 30px
@@ -23,9 +25,16 @@
   &__form
     display: flex
     position: relative
-    +m(480)
+    +m(768)
       flex-direction: column
       align-items: center
+      margin-top: 20px
+      margin-bottom: 50px
+      width: 100%
+
+    .btn
+      +m(768)
+        width: 100%
 
   &__link
     line-height: 0
@@ -40,12 +49,20 @@
     box-sizing: border-box
     +regular
 
+    +m(768)
+      width: 100%
+      margin: 10px 0
+
   &__error-text
     position: absolute
     left: 0
     top: -22px
     color: #c00
     font-weight: bold
+    +m(768)
+      top: -20px
+      left: 50%
+      transform: translateX(-50%)
 
   .download
     margin-bottom: 0

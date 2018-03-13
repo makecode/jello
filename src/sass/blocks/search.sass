@@ -82,8 +82,9 @@
 
   &.is-mobile
     display: none
-    width: calc(100% + 40px)
-    margin-left: -20px
+    +m(768)
+      width: calc(100% + 40px)
+      margin-left: -20px
 
     .search__form
       border: 1px solid $btnGreen
@@ -99,6 +100,7 @@
       height: 40px
       line-height: 40px
       min-width: 84px
+      font-size: 13px
 
     &.is-visible
       display: block
