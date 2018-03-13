@@ -243,7 +243,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .btn.is-fz-16 { font-size: 16px; }
 .btn.mobile-search { background-color: transparent; border: none; padding: 0; width: auto; min-width: 40px; }
 
-.btn-google { width: 120px; height: 35px; }
+.btn-google { min-width: 120px; width: 120px; height: 35px; background: url("../img/btn_google_play.svg") no-repeat; background-size: cover; }
 
 .block-header { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; padding-bottom: 8px; border-bottom: 1px solid #d9dadb; }
 .block-header__link, .block-header__more { color: #37474f; }
@@ -259,7 +259,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 @media only screen and (max-width: 768px) { .captcha__form { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; margin-top: 20px; margin-bottom: 50px; width: 100%; } }
 @media only screen and (max-width: 768px) { .captcha__form .btn { width: 100%; } }
 .captcha__link { line-height: 0; }
-.captcha__input { margin: 0 16px; padding: 0 10px; width: 120px; height: 35px; line-height: 35px; font-size: 15px; box-sizing: border-box; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
+.captcha__input { margin: 0 16px; padding: 0 10px; width: 120px; height: 35px; line-height: 35px; font-size: 15px; border: 1px solid #cccccc; box-sizing: border-box; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
 @media only screen and (max-width: 768px) { .captcha__input { width: 100%; margin: 10px 0; } }
 .captcha__error-text { position: absolute; left: 0; top: -22px; color: #c00; font-weight: bold; }
 @media only screen and (max-width: 768px) { .captcha__error-text { top: -20px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
@@ -294,7 +294,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .collection__descr { color: #919191; }
 
 .content { padding-top: 30px; padding-bottom: 50px; }
-@media only screen and (max-width: 768px) { .content { padding-bottom: 30px; } }
+@media only screen and (max-width: 768px) { .content { padding-top: 20px; padding-bottom: 30px; } }
 .content__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 @media only screen and (max-width: 1024px) { .content__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 .content__left { width: -webkit-calc(100% - 300px); width: calc(100% - 300px); margin-right: 20px; }
@@ -318,12 +318,18 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .content.is-inner-12 .information__text { margin-bottom: 0; }
 
 .download { margin: 10px 0 40px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
-.download__img { margin-right: 30px; width: 64px; }
+@media only screen and (max-width: 480px) { .download { margin: 10px 0 30px; } }
+.download__left { margin-right: 30px; max-width: 64px; height: 64px; }
+.download__right { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
+@media only screen and (max-width: 480px) { .download__right { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; width: 100%; } }
+.download__img { max-width: 64px; }
 .download .btn { margin-right: 15px; }
+@media only screen and (max-width: 480px) { .download .btn { width: 100%; margin-right: 0; margin-bottom: 10px; } }
 
 .error { position: relative; margin: 54px auto 100px; box-sizing: border-box; text-align: center; }
 .error__name { font-size: 100px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
 @media only screen and (max-width: 768px) { .error__name { font-size: 80px; } }
+@media only screen and (max-width: 480px) { .error__name { font-size: 60px; } }
 .error__descr { margin-bottom: 30px; font-size: 16px; }
 
 .general-banner { width: 720px; text-align: center; }
@@ -354,6 +360,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .information__title.is-fz-14 { font-size: 14px; }
 .information__text { display: inline-block; }
 .information__descr { margin-top: 22px; margin-bottom: 20px; }
+@media only screen and (max-width: 480px) { .information__descr { margin-top: 10px; margin-bottom: 15px; } }
 .information__link { color: #37474f; }
 .information__link:hover { text-decoration: underline; }
 .information .list { margin-top: 6px; margin-bottom: 23px; }
@@ -484,7 +491,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .ringtone__icon { display: inline-block; background-image: url("../img/play_ringtone.svg"); background-size: cover; width: 50px; height: 50px; cursor: pointer; }
 .ringtone__icon.is-played { background-image: url("../img/stop_ringtone.svg"); }
 .ringtone__link { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
-.ringtone__name { display: block; height: -webkit-calc(100% - 60px); height: calc(100% - 60px); margin-top: 10px; color: #37474f; overflow: hidden; text-overflow: ellipsis; }
+.ringtone__name { display: block; width: 100%; height: -webkit-calc(100% - 60px); height: calc(100% - 60px); margin-top: 10px; color: #37474f; overflow: hidden; text-overflow: ellipsis; }
 .ringtone__download { position: absolute; bottom: 20px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .ringtone__download a { display: block; }
 
