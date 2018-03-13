@@ -157,6 +157,7 @@ a:active, a:focus, a:visited { text-decoration: none; }
 img { display: inline-block; max-width: 100%; height: auto; }
 
 .banner { margin-bottom: 20px; }
+.banner__link { display: block; }
 
 .logo { display: inline-block; line-height: 0; }
 .logo__img { width: 120px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
@@ -186,8 +187,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 @media only screen and (max-width: 768px) { .apps__el { width: 50%; } }
 @media only screen and (max-width: 480px) { .apps__el { width: 100%; } }
 .apps.is-medium .apps__el { width: 25%; }
-@media only screen and (max-width: 768px) { .apps.is-medium .apps__el { width: 30%; } }
-@media only screen and (max-width: 480px) { .apps.is-medium .apps__el { width: 45%; } }
+@media only screen and (max-width: 480px) { .apps.is-medium .apps__el { width: 33%; } }
 .apps.is-medium .app { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 .apps.is-medium .app__name { margin-top: 8px; font-size: 13px; text-align: center; }
 .apps.is-medium .app__icon { width: 80px; height: 80px; }
@@ -198,12 +198,12 @@ img { display: inline-block; max-width: 100%; height: auto; }
 @media only screen and (max-width: 480px) { .apps.is-16per .apps__el { width: 50%; } }
 .apps.is-20per .apps__el { width: 20%; margin-bottom: 20px; }
 @media only screen and (max-width: 1024px) { .apps.is-20per .apps__el { width: 33%; } }
-@media only screen and (max-width: 768px) { .apps.is-20per .apps__el { width: 49%; } }
+@media only screen and (max-width: 768px) { .apps.is-20per .apps__el { width: 50%; } }
 @media only screen and (max-width: 480px) { .apps.is-20per .apps__el { width: 100%; } }
 .apps.is-small { margin-top: 22px; margin-bottom: 0; }
 .apps.is-small .apps__el { margin-bottom: 15px; }
-@media only screen and (max-width: 768px) { .apps.is-small .apps__el { width: 33%; } }
-@media only screen and (max-width: 480px) { .apps.is-small .apps__el { width: 50%; } }
+@media only screen and (max-width: 1024px) { .apps.is-small .apps__el { width: 25%; } }
+@media only screen and (max-width: 480px) { .apps.is-small .apps__el { width: 33%; } }
 .apps.is-small .app { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 .apps.is-small .app__name { margin-top: 4px; font-size: 13px; text-align: center; }
 
@@ -262,8 +262,8 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .captcha__input { margin: 0 16px; padding: 0 10px; width: 120px; height: 35px; line-height: 35px; font-size: 15px; border: 1px solid #cccccc; box-sizing: border-box; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
 @media only screen and (max-width: 768px) { .captcha__input { width: 100%; margin: 10px 0; } }
 .captcha__error-text { position: absolute; left: 0; top: -22px; color: #c00; font-weight: bold; }
-@media only screen and (max-width: 768px) { .captcha__error-text { top: -20px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); } }
-.captcha .download { margin-bottom: 0; }
+@media only screen and (max-width: 768px) { .captcha__error-text { position: relative; top: auto; left: auto; margin-bottom: 10px; } }
+.captcha__success .captcha__bottom { -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
 
 .categories { margin: 4px 0 30px; width: 300px; box-sizing: border-box; }
 @media only screen and (max-width: 1024px) { .categories { width: 100%; } }
@@ -285,9 +285,10 @@ img { display: inline-block; max-width: 100%; height: auto; }
 @media only screen and (max-width: 480px) { .collection { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 .collection__left { width: 30%; margin-right: 20px; }
 @media only screen and (max-width: 768px) { .collection__left { margin-bottom: 10px; text-align: center; } }
-.collection__right { width: 60%; }
+.collection__right { width: -webkit-calc(70% - 40px); width: calc(70% - 40px); }
 @media only screen and (max-width: 480px) { .collection__left, .collection__right { width: 100%; } }
-.collection__img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
+.collection__link { display: block; line-height: 0; }
+.collection__img { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; max-height: 175px; }
 .collection__title { margin-bottom: 15px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; font-size: 18px; color: #37474f; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
 .collection__title:hover { text-decoration: underline; }
 @media only screen and (max-width: 768px) { .collection__title { margin-bottom: 5px; font-size: 16px; } }
@@ -343,7 +344,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .hamburger { position: relative; display: inline-block; width: 20px; height: 17px; -webkit-transition: 0.5s ease-in-out; transition: 0.5s ease-in-out; cursor: pointer; }
 .hamburger__el { display: block; position: absolute; left: 0; height: 3px; width: 100%; background-color: #fff; -webkit-transition: 0.25s ease-in-out; transition: 0.25s ease-in-out; -webkit-transform-origin: left top; -ms-transform-origin: left top; transform-origin: left top; }
 .hamburger__el:nth-child(1) { top: 0; }
-.hamburger__el:nth-child(2) { top: 50%; -webkit-transform: translateY(-75%); -ms-transform: translateY(-75%); transform: translateY(-75%); }
+.hamburger__el:nth-child(2) { top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .hamburger__el:nth-child(3) { top: 100%; -webkit-transform: translateY(-100%); -ms-transform: translateY(-100%); transform: translateY(-100%); }
 .hamburger.open .hamburger__el { left: 4px; }
 .hamburger.open .hamburger__el:nth-child(1) { -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
@@ -486,8 +487,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .result__link:hover { text-decoration: underline; }
 .result__name { display: block; margin-bottom: 3px; }
 
-.ringtone { position: relative; padding: 20px 16px 60px; width: 170px; height: 190px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; text-align: center; background-color: #f7f9fa; box-sizing: border-box; }
-@media only screen and (max-width: 1024px) { .ringtone { width: 100%; } }
+.ringtone { position: relative; padding: 20px 16px 60px; width: 100%; height: 190px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; text-align: center; background-color: #f7f9fa; box-sizing: border-box; }
 .ringtone__icon { display: inline-block; background-image: url("../img/play_ringtone.svg"); background-size: cover; width: 50px; height: 50px; cursor: pointer; }
 .ringtone__icon.is-played { background-image: url("../img/stop_ringtone.svg"); }
 .ringtone__link { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; }
@@ -496,8 +496,8 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .ringtone__download a { display: block; }
 
 .ringtones__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-.ringtones__el { margin-bottom: 10px; }
-@media only screen and (max-width: 1024px) { .ringtones__el { width: 31%; } }
+.ringtones__el { display: block; width: 170px; margin-bottom: 10px; }
+@media only screen and (max-width: 1200px) { .ringtones__el { width: 32%; } }
 @media only screen and (max-width: 768px) { .ringtones__el { width: 49%; } }
 
 .search { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; cursor: text; }

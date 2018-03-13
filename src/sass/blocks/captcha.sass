@@ -61,9 +61,15 @@
     color: #c00
     font-weight: bold
     +m(768)
-      top: -20px
-      left: 50%
-      transform: translateX(-50%)
+      position: relative
+      top: auto
+      left: auto
+      margin-bottom: 10px
 
-  .download
-    margin-bottom: 0
+  &__success
+    .captcha__bottom
+      flex-direction: row
+
+
+  //.download
+  //  margin-bottom: 0
