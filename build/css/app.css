@@ -504,7 +504,7 @@ img { display: inline-block; max-width: 100%; height: auto; }
 .search { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; width: 100%; cursor: text; }
 .search__form { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; width: 100%; }
 .search__input { display: block; padding-left: 45px; padding-right: 20px; width: 100%; height: 50px; line-height: 50px; font-size: 15px; color: #919191; border: none; letter-spacing: -0.3px; box-sizing: border-box; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; border-radius: 0; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
-.search__input:focus { outline: none; }
+.search__input:focus { border-radius: 0; outline: none; }
 .search__ico { position: absolute; width: 18px; top: 15px; left: 14px; }
 .search__ico .icon { font-size: 17px; }
 .search.is-small { position: relative; width: 220px; }
