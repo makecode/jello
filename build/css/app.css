@@ -158,6 +158,8 @@ a:active, a:focus, a:visited { text-decoration: none; }
 
 img { display: inline-block; max-width: 100%; height: auto; }
 
+input[type='text'], input[type='search'] { border-radius: 0; }
+
 .banner { margin-bottom: 10px; }
 .banner__link { display: block; }
 
