@@ -158,7 +158,7 @@ a:active, a:focus, a:visited { text-decoration: none; }
 
 img { display: inline-block; max-width: 100%; height: auto; }
 
-input[type='text'], input[type='search'] { border-radius: 0; }
+input[type='text'], input[type='search'] { border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
 .banner { margin-bottom: 10px; }
 .banner__link { display: block; }
