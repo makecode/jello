@@ -1,33 +1,25 @@
 .download
-  //margin: 10px 0 40px
-  padding: 10px 0
+  padding: 15px 0
   margin-bottom: 35px
   display: flex
   align-items: center
   width: 100%
   border-bottom: 1px solid $border
   background: url('../img/ico_arrow_down_right.png') right bottom no-repeat
-  +m(480)
-    margin: 10px 0 30px
 
   &__left
     margin-right: 30px
     max-width: 64px
     height: 64px
+    +m(768)
+      display: none
 
   &__right
     display: flex
-    align-items: center
-    +m(480)
-      flex-direction: column
-      width: 100%
+    flex-wrap: wrap
 
   &__img
     max-width: 64px
 
   .btn
-    margin-right: 15px
-    +m(480)
-      width: 100%
-      margin-right: 0
-      margin-bottom: 10px
+    margin: 0 15px 10px 0
