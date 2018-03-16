@@ -482,7 +482,6 @@ input[type='text'], input[type='search'] { border-radius: 0; -moz-appearance: no
 @media only screen and (max-width: 768px) { .post__link { -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 .post__descr { margin-top: 10px; }
 .post:hover .post__title { text-decoration: underline; }
-.post__link { padding-bottom: 10px; }
 
 .posts__list { margin-top: 10px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 .posts__el { margin-bottom: 15px; }
