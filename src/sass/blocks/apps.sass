@@ -39,10 +39,16 @@
       &__icon
         width: 80px
         height: 80px
+        +m(768)
+          width: 58px
+          height: 58px
 
         img
           max-height: 80px
           max-width: 80px
+          +m(768)
+            width: 58px
+            height: 58px
 
   &.is-16per
     .apps__el
@@ -50,9 +56,9 @@
       +m(1024)
         width: 20%
       +m(768)
-        width: 33%
+        width: 25%
       +m(480)
-        width: 50%
+        width: 33%
 
   &.is-20per
     .apps__el

@@ -6,11 +6,19 @@
 
     +m(1024)
       margin-right: 15px
+    +m(480)
+      margin-right: 0
 
-  +m(1024)
-    &__top,
-    &__bottom
+  &__top,
+  &__bottom
+    +m(1024)
       width: 50%
+    +m(480)
+      width: 100%
+
+  &__img
+    +m(480)
+      width: 100%
 
   &__title
     font-size: 14px
@@ -21,6 +29,8 @@
 
     +m(1024)
       display: flex
+    +m(480)
+      flex-direction: column
 
   &__descr
     margin-top: 10px
