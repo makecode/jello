@@ -402,7 +402,8 @@ input[type='text'], input[type='search'] { border-radius: 0; -moz-appearance: no
 
 .main { -webkit-box-flex: 0; -webkit-flex: 0 0 auto; -ms-flex: 0 0 auto; flex: 0 0 auto; position: relative; }
 
-.header { min-height: 380px; position: relative; background: url("../img/backgr_main_page.png") right no-repeat; background-size: cover; }
+.header { position: relative; background: url("../img/backgr_main_page.png") right no-repeat; background-size: cover; }
+.header.is-main { min-height: 380px; }
 .header__wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
 @media only screen and (max-width: 768px) { .header__wrap .logo { position: absolute; top: 50%; left: 50%; z-index: 6; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); } }
 .header__top { position: relative; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; height: 60px; }
