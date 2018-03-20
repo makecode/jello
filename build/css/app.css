@@ -262,6 +262,7 @@ input[type='text'], input[type='search'] { border-radius: 0; -moz-appearance: no
 .captcha__product-icon { margin-right: 30px; width: 64px; height: 64px; }
 @media only screen and (max-width: 768px) { .captcha__product-icon { display: none; } }
 .captcha__form { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: relative; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+@media only screen and (max-width: 480px) { .captcha__form .btn { min-width: initial; } }
 .captcha__el { display: -webkit-inline-box; display: -webkit-inline-flex; display: -ms-inline-flexbox; display: inline-flex; margin-bottom: 16px; }
 .captcha__link { line-height: 0; }
 .captcha__input { margin: 0 16px; padding: 0 10px; width: 120px; height: 35px; line-height: 35px; font-size: 15px; border: 1px solid #cccccc; box-sizing: border-box; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
