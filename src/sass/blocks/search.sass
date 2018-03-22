@@ -84,6 +84,7 @@
 
   &.is-mobile
     display: none
+
     +m(768)
       width: calc(100% + 40px)
       margin-left: -20px
@@ -92,6 +93,7 @@
       box-sizing: border-box
 
     .search__input
+      width: calc(100% - 84px)
       padding-left: 15px
       padding-right: 20px
       height: 40px
@@ -101,4 +103,5 @@
       height: 40px
       line-height: 40px
       min-width: 84px
+      width: auto
       font-size: 13px
