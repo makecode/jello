@@ -2386,6 +2386,6 @@ $(document).ready(function () {
 
   // mobile search
   $('#btn-search-mobile').on('click', function () {
-    $('#search-mobile').toggleClass('is-visible');
+    $('#header').toggleClass('search-opened');
   });
 });
