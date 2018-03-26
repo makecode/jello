@@ -186,7 +186,7 @@ input[type='text'], input[type='search'] { border-radius: 0; -moz-appearance: no
 
 .apps { margin: 10px 0 20px; }
 .apps__list { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
-@media only screen and (max-width: 1024px) { .apps__list { -webkit-box-pack: baseline; -webkit-justify-content: baseline; -ms-flex-pack: baseline; justify-content: baseline; } }
+@media only screen and (max-width: 1024px) { .apps__list { -webkit-box-pack: start; -webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start; } }
 .apps__el { width: 33%; margin-bottom: 16px; }
 @media only screen and (max-width: 768px) { .apps__el { width: 50%; } }
 @media only screen and (max-width: 480px) { .apps__el { width: 100%; } }
