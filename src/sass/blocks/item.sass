@@ -1,49 +1,30 @@
 .item
+  position: relative
   display: flex
+  flex-direction: row
   align-items: center
+  margin-bottom: 20px
 
-  +m(480)
-    flex-wrap: wrap
-
-  &__left
-    margin-right: 20px
-
-  &__center
-    +m(480)
-      width: calc(100% - 78px)
-
-  &__right
-    display: flex
-    flex-direction: column
-    margin-left: 20px
-    +m(480)
-      width: 100%
-      margin-left: 0
-      margin-top: 20px
-
-  &__icon
+  &__link
     position: relative
-    display: flex
+    display: inline-flex
     justify-content: center
-    align-items: center
-    width: 90px
+    min-width: 90px
     height: 90px
     +m(768)
-      max-width: 80px
-      max-height: 80px
-    +m(480)
-      max-width: 58px
-      max-height: 58px
+      min-width: 58px
+      height: 58px
 
   &__img
-    max-width: 90px
-    max-height: 90px
-    +m(768)
-      max-width: 80px
-      max-height: 80px
-    +m(480)
-      max-width: 58px
-      max-height: 58px
+    max-height: 100%
+
+  &__info
+    flex: 0 3 100%
+    padding: 0 20px
+
+  &__action
+    display: flex
+    flex-direction: column
 
   &__title
     margin-bottom: 10px
@@ -62,9 +43,17 @@
       font-size: 12px
 
   &__btn
+    padding: 0
     margin-bottom: 10px
+
     +m(768)
-      font-size: 13px
+      width: 80px
+      min-width: inherit
+      height: 28px
+      line-height: 28px
+
+    +m(768)
+      font-size: 12px
 
     &:last-child
       margin-bottom: 0
