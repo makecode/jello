@@ -94,6 +94,23 @@ input[type='search']
 .info
   &__text
     margin-bottom: 18px
+  ul
+    display: flex
+    flex-direction: column
+
+    li
+      position: relative
+      padding-left: 12px
+
+      &:after
+        position: absolute
+        top: 8px
+        left: 1px
+        content: ''
+        width: 3px
+        height: 3px
+        border-radius: 50%
+        background-color: $text
 
 .product
   &__logo

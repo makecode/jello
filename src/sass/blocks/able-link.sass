@@ -1,0 +1,69 @@
+.able-link
+  display: flex
+  justify-content: center
+  height: 144px
+  background-color: transparent
+  border: 1px solid #cfcfcf
+  box-sizing: border-box
+
+  &__link
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: $text
+
+  &__icon
+    line-height: 1
+    margin-bottom: 10px
+
+  &__platform
+    display: inline-block
+    font-size: 16px
+
+  &.android
+    .able-link__icon
+      &::before
+        color: $btnGreen
+
+    .able-link__platform
+      color: $btnGreen
+
+  &.windows
+    .able-link__icon
+      &::before
+        color: #0288d1
+
+    .able-link__platform
+      color: #0288d1
+
+  &.app-store
+    .able-link__icon
+      &::before
+        color: black
+
+    .able-link__platform
+      color: $text
+
+  &.disabled
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: $text
+    cursor: default
+
+    .able-link__text,
+    .able-link__platform
+      color: #d9dadb
+
+    .able-link__icon
+      &.is-android
+        background: url('../img/android_g.svg')no-repeat
+      &.is-windows
+        background: url('../img/windows_g.svg')no-repeat
+      &.is-app-store
+        background: url('../img/apple_g.svg')no-repeat
+      &.is-googleplay
+        background: url('../img/googleplay_g.svg')no-repeat
