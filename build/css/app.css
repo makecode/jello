@@ -142,6 +142,8 @@ html, body { box-sizing: border-box; height: 100%; }
 .rateit.rateit-font button.rateit-reset:focus { background: #e6574b; /* Old browsers */ background: -webkit-radial-gradient(center ellipse, #e6574b 55%, #f6836b 77%, #f9d3cc 100%); background: radial-gradient(ellipse at center, #e6574b 55%, #f6836b 77%, #f9d3cc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ background-position: 0 0; }
 
 @font-face { font-family: jello-icons; src: url("../fonts/jello-icons.eot"); src: url("../fonts/jello-icons.eot?#iefix") format("embedded-opentype"), url("../fonts/jello-icons.woff") format("woff"), url("../fonts/jello-icons.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+html { -webkit-text-size-adjust: 100%; }
+
 body { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; font-size: 13px; line-height: 1.4; color: #37474f; min-width: 320px; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 400; }
 
 h1 { font-size: 46px; color: #37474f; font-family: "Open Sans", Helvetica, Arial, sans-serif; font-weight: 600; }
