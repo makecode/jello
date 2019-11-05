@@ -2420,10 +2420,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 })(jQuery);
 
 $(document).ready(function () {
-  var audioWrap = $('.ringtone__icon');
+  var openedMenuClass = 'menu-opened';
+  var $audioWrap = $('.ringtone__icon');
+  var $menuContainer = $('#with-service');
+  var $dropDownMenu = $('.dropdown-menu');
+  var $mobileDropMenu = $('#with-services');
+  var $mobileDrop = $('.dropdown-mobile');
 
   var _loop = function _loop(i) {
-    var el = audioWrap[i];
+    var el = $audioWrap[i];
     $(el).click(function (event) {
       event.stopPropagation();
       var audio = $(this).find('.ringtone__audio')[0];
@@ -2439,7 +2444,7 @@ $(document).ready(function () {
     });
   };
 
-  for (var i = 0; i < audioWrap.length; i += 1) {
+  for (var i = 0; i < $audioWrap.length; i += 1) {
     _loop(i);
   }
 
@@ -2452,5 +2457,21 @@ $(document).ready(function () {
   // mobile search
   $('#btn-search-mobile').on('click', function () {
     $('#header').toggleClass('search-opened');
+  });
+
+  //dropdown-menu
+  $menuContainer.on('click', function () {
+    $menuContainer.toggleClass(openedMenuClass);
+  });
+
+  // Close menu when clicked outside of this menu
+  document.addEventListener('click', function (e) {
+    var isClickOnOutside = $menuContainer.has(e.target).length === 0;
+
+    isClickOnOutside && $menuContainer.removeClass(openedMenuClass);
+  });
+
+  $mobileDropMenu.on('click', function () {
+    $mobileDrop.toggleClass('is-open');
   });
 });

@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="https://zelloapps.com/css/app.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/app.js"></script>
+  <title>Jello Apps</title>
+</head>
+
+<body>
+<div class="mobile-menu with-service">
+  <div class="mobile-menu__top"></div>
+  <div class="mobile-menu__bottom">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-home"></span>
+          <span class="mobile-menu__name">Home</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-apps"></span>
+          <span class="mobile-menu__name">Apps</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-game"></span>
+          <span class="mobile-menu__name">Games</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-rington"></span>
+          <span class="mobile-menu__name">Ringtones</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-post"></span>
+          <span class="mobile-menu__name">Posts</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el" id="with-services">
+        <a href="#" class="mobile-menu__link">
+          <span class="ico-settings">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M26.8 17.5c.1-.5.1-1 .1-1.5s0-1-.1-1.5l3-2.3c.3-.3.3-.6.1-.8l-2.9-5c-.1-.1-.4-.3-.9-.1l-3.3 1.3C22 6.9 21 6.4 20 6l-.5-3.3c0-.3-.3-.6-.7-.6h-5.6c-.4 0-.7.3-.7.6L12 6c-1 .4-2 1-2.8 1.6L5.8 6.2c-.4-.1-.7 0-.8.2l-2.9 4.9c-.1.3-.1.5.1.8l3 2.3c-.1.5-.1 1-.1 1.5s0 1 .1 1.5l-3 2.3c-.2.5-.2.7-.1 1L5 25.6c.1.1.4.3.9.1l3.3-1.3c.8.7 1.8 1.2 2.8 1.6l.5 3.3c0 .3.3.6.7.6h5.6c.4 0 .7-.3.7-.6L20 26c1-.4 2-1 2.8-1.6l3.3 1.3c.4.1.7 0 .9-.1l2.9-4.9c.1-.3.1-.6-.1-.8l-3-2.4zM16 21.9c-3.2 0-5.9-2.6-5.9-5.9s2.6-5.9 5.9-5.9 5.9 2.6 5.9 5.9-2.7 5.9-5.9 5.9z"/></svg>
+          </span>
+          <span class="mobile-menu__name">Services</span>
+        </a>
+        <ul class="dropdown-mobile">
+          <li class="dropdown-mobile__el">
+            <a class="dropdown-mobile__link" target="_blank" href="#">App Sale Alert</a>
+          </li>
+          <li class="dropdown-mobile__el">
+            <a class="dropdown-mobile__link" target="_blank" href="#">Advertising</a>
+          </li>
+          <li class="dropdown-mobile__el">
+            <a class="dropdown-mobile__link" target="_blank" href="#">App Development</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div><!-- end mobile-menu -->
+
+<header class="header menu-service" id="header">
+  <div class="container">
+    <div class="header__wrap">
+      <div class="header__top">
+        <div class="header__left">
+          <div class="hamburger" id="hamburger">
+            <span class="hamburger__el"></span>
+            <span class="hamburger__el"></span>
+            <span class="hamburger__el"></span>
+          </div>
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="img/logo_head.svg" alt="logo-JelloApps" class="logo__img">
+            </a>
+          </div>
+          <div class="search is-small">
+            <form class="search__form" action="#">
+              <input class="search__input"
+                     type="search"
+                     placeholder="Find any apps">
+              <button type="submit" class="search__btn">
+                <span class="icon icon-search"></span>
+              </button>
+            </form>
+          </div><!-- end search -->
+        </div>
+        <div class="header__right">
+          <nav class="nav with-services">
+            <ul class="nav__list">
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-apps"></span>
+                  <span class="nav__name">Apps</span>
+                </a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-game"></span>
+                  <span class="nav__name">Games</span>
+                </a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-rington"></span>
+                  <span class="nav__name">Ringtones</span>
+                </a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-post"></span>
+                  <span class="nav__name">Posts</span>
+                </a>
+              </li>
+              <li class="nav__el" id="with-service">
+                <a href="#" class="nav__link">
+                  <span class="ico-settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M26.8 17.5c.1-.5.1-1 .1-1.5s0-1-.1-1.5l3-2.3c.3-.3.3-.6.1-.8l-2.9-5c-.1-.1-.4-.3-.9-.1l-3.3 1.3C22 6.9 21 6.4 20 6l-.5-3.3c0-.3-.3-.6-.7-.6h-5.6c-.4 0-.7.3-.7.6L12 6c-1 .4-2 1-2.8 1.6L5.8 6.2c-.4-.1-.7 0-.8.2l-2.9 4.9c-.1.3-.1.5.1.8l3 2.3c-.1.5-.1 1-.1 1.5s0 1 .1 1.5l-3 2.3c-.2.5-.2.7-.1 1L5 25.6c.1.1.4.3.9.1l3.3-1.3c.8.7 1.8 1.2 2.8 1.6l.5 3.3c0 .3.3.6.7.6h5.6c.4 0 .7-.3.7-.6L20 26c1-.4 2-1 2.8-1.6l3.3 1.3c.4.1.7 0 .9-.1l2.9-4.9c.1-.3.1-.6-.1-.8l-3-2.4zM16 21.9c-3.2 0-5.9-2.6-5.9-5.9s2.6-5.9 5.9-5.9 5.9 2.6 5.9 5.9-2.7 5.9-5.9 5.9z"/></svg>
+                  </span>
+                  <span class="nav__name">Services</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__el">
+                    <a class="dropdown-menu__link" target="_blank" href="#">App Sale Alert</a>
+                  </li>
+                  <li class="dropdown-menu__el">
+                    <a class="dropdown-menu__link" target="_blank" href="#">Advertising</a>
+                  </li>
+                  <li class="dropdown-menu__el">
+                    <a class="dropdown-menu__link" target="_blank" href="#">App Development</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn mobile-search" id="btn-search-mobile" type="button">
+            <span class="icon icon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="search is-mobile">
+      <form class="search__form" action="#">
+        <input class="search__input"
+               type="text"
+               placeholder="Find any apps">
+        <div class="search__action">
+          <button class="btn is-search" type="button">
+            Search
+          </button>
+        </div>
+      </form>
+    </div><!-- end search -->
+  </div><!-- end container -->
+</header>
+<!-- end header -->
+<main class="main">
+  <div class="container">
+    <section class="content is-sales">
+      <h1 class="is-fz-32">App Sale Alert</h1>
+      <div class="sales-wrap">
+        <div class="sales-block">
+          <h2>Sales and free apps lists</h2>
+          <p>Do you want to be aware of the latest deals on the mobile market? We check the most fruitful discounts on
+            Google Play Market and Apple iTunes provide you with hot updates.</p>
+          <p>After subscribing to our newsletter, you will be first to know about:</p>
+        </div>
+        <div class="benefits">
+          <ul class="benefits__list">
+            <li class="benefits__el">
+              <img src="../img/ico_free.png" alt="#">
+              <span class="benefits__text">Which paid apps and games gone free.</span>
+            </li>
+            <li class="benefits__el">
+              <img src="../img/ico_sale.png" alt="#">
+              <span class="benefits__text">Which paid apps and games got discounts.</span>
+            </li>
+            <li class="benefits__el">
+              <img src="../img/ico_cart.png" alt="#">
+              <span class="benefits__text">Which paid apps and games got discounts on in-app purchases.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="plans">
+          <h2 class="plans__title">Subscription Plan</h2>
+          <span class="plans__text">We will help you spend much less on your favorite apps and games. Subscribe to ZelloApp Sales and Free App lists right now!</span>
+          <div class="pricing-table">
+            <div class="column">
+              <h2></h2>
+              <ul>
+                <li>Email newsletter with the list of free and discounted apps & games.</li>
+                <li>Email newsletter with the in-app purchases discounts for top-1000 apps.</li>
+                <li>Access to premium page where you can easily find the discount you are looking for.</li>
+                <li>Pricing</li>
+              </ul>
+            </div>
+            <div class="column premium">
+              <h2>Premium</h2>
+              <ul>
+                <li>Daily</li>
+                <li>Daily</li>
+                <li>Daily</li>
+                <li>
+                  <div class="price">
+                    <span>$4,99</span>
+                    <span class="price__period">per month</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="column standart">
+              <h2>Standart</h2>
+              <ul>
+                <li>Daily</li>
+                <li>Daily</li>
+                <li>Daily</li>
+                <li>Free</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="access">
+          <span class="access__text">To get access to Premium plan, fill in the form below</span>
+          <form class="access__form" action="#">
+            <input class="access__input" type="email" placeholder="Enter your email">
+            <div class="access__action">
+              <button type="submit">Get access</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class='footer'>
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__left">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo_foot.svg" alt="logo-JelloApps" class="logo__img">
+          </a>
+        </div>
+      </div>
+      <div class="footer__center">
+        <div class="copyright">© 2019 ZelloApps.com. All rights reserved.</div>
+      </div>
+      <div class="footer__right">
+        <nav class="nav is-footer">
+          <ul class="nav__list">
+            <li class="nav__el">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__el">
+              <a href="#" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__el">
+              <a href="#" class="nav__link">Privacy</a>
+            </li>
+            <li class="nav__el">
+              <a href="#" class="nav__link">Policy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- end footer__wrap -->
+  </div><!-- end container -->
+</footer><!-- end footer -->
+</body>

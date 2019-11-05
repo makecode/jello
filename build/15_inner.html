@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="https://zelloapps.com/css/app.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/app.js"></script>
+  <title>Jello Apps</title>
+</head>
+
+<body>
+<div class="mobile-menu with-service">
+  <div class="mobile-menu__top"></div>
+  <div class="mobile-menu__bottom">
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-home"></span>
+          <span class="mobile-menu__name">Home</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-apps"></span>
+          <span class="mobile-menu__name">Apps</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-game"></span>
+          <span class="mobile-menu__name">Games</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-rington"></span>
+          <span class="mobile-menu__name">Ringtones</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el">
+        <a href="#" class="mobile-menu__link">
+          <span class="icon icon-post"></span>
+          <span class="mobile-menu__name">Posts</span>
+        </a>
+      </li>
+      <li class="mobile-menu__el" id="with-services">
+        <a href="#" class="mobile-menu__link">
+          <span class="ico-settings">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M26.8 17.5c.1-.5.1-1 .1-1.5s0-1-.1-1.5l3-2.3c.3-.3.3-.6.1-.8l-2.9-5c-.1-.1-.4-.3-.9-.1l-3.3 1.3C22 6.9 21 6.4 20 6l-.5-3.3c0-.3-.3-.6-.7-.6h-5.6c-.4 0-.7.3-.7.6L12 6c-1 .4-2 1-2.8 1.6L5.8 6.2c-.4-.1-.7 0-.8.2l-2.9 4.9c-.1.3-.1.5.1.8l3 2.3c-.1.5-.1 1-.1 1.5s0 1 .1 1.5l-3 2.3c-.2.5-.2.7-.1 1L5 25.6c.1.1.4.3.9.1l3.3-1.3c.8.7 1.8 1.2 2.8 1.6l.5 3.3c0 .3.3.6.7.6h5.6c.4 0 .7-.3.7-.6L20 26c1-.4 2-1 2.8-1.6l3.3 1.3c.4.1.7 0 .9-.1l2.9-4.9c.1-.3.1-.6-.1-.8l-3-2.4zM16 21.9c-3.2 0-5.9-2.6-5.9-5.9s2.6-5.9 5.9-5.9 5.9 2.6 5.9 5.9-2.7 5.9-5.9 5.9z"/></svg>
+          </span>
+          <span class="mobile-menu__name">Services</span>
+        </a>
+        <ul class="dropdown-mobile">
+          <li class="dropdown-mobile__el">
+            <a class="dropdown-mobile__link" target="_blank" href="#">App Sale Alert</a>
+          </li>
+          <li class="dropdown-mobile__el">
+            <a class="dropdown-mobile__link" target="_blank" href="#">Advertising</a>
+          </li>
+          <li class="dropdown-mobile__el">
+            <a class="dropdown-mobile__link" target="_blank" href="#">App Development</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div><!-- end mobile-menu -->
+
+<header class="header menu-service" id="header">
+  <div class="container">
+    <div class="header__wrap">
+      <div class="header__top">
+        <div class="header__left">
+          <div class="hamburger" id="hamburger">
+            <span class="hamburger__el"></span>
+            <span class="hamburger__el"></span>
+            <span class="hamburger__el"></span>
+          </div>
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img src="img/logo_head.svg" alt="logo-JelloApps" class="logo__img">
+            </a>
+          </div>
+          <div class="search is-small">
+            <form class="search__form" action="#">
+              <input class="search__input"
+                     type="search"
+                     placeholder="Find any apps">
+              <button type="submit" class="search__btn">
+                <span class="icon icon-search"></span>
+              </button>
+            </form>
+          </div><!-- end search -->
+        </div>
+        <div class="header__right">
+          <nav class="nav with-services">
+            <ul class="nav__list">
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-apps"></span>
+                  <span class="nav__name">Apps</span>
+                </a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-game"></span>
+                  <span class="nav__name">Games</span>
+                </a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-rington"></span>
+                  <span class="nav__name">Ringtones</span>
+                </a>
+              </li>
+              <li class="nav__el">
+                <a href="#" class="nav__link">
+                  <span class="icon icon-post"></span>
+                  <span class="nav__name">Posts</span>
+                </a>
+              </li>
+              <li class="nav__el" id="with-service">
+                <a href="#" class="nav__link">
+                  <span class="ico-settings">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M26.8 17.5c.1-.5.1-1 .1-1.5s0-1-.1-1.5l3-2.3c.3-.3.3-.6.1-.8l-2.9-5c-.1-.1-.4-.3-.9-.1l-3.3 1.3C22 6.9 21 6.4 20 6l-.5-3.3c0-.3-.3-.6-.7-.6h-5.6c-.4 0-.7.3-.7.6L12 6c-1 .4-2 1-2.8 1.6L5.8 6.2c-.4-.1-.7 0-.8.2l-2.9 4.9c-.1.3-.1.5.1.8l3 2.3c-.1.5-.1 1-.1 1.5s0 1 .1 1.5l-3 2.3c-.2.5-.2.7-.1 1L5 25.6c.1.1.4.3.9.1l3.3-1.3c.8.7 1.8 1.2 2.8 1.6l.5 3.3c0 .3.3.6.7.6h5.6c.4 0 .7-.3.7-.6L20 26c1-.4 2-1 2.8-1.6l3.3 1.3c.4.1.7 0 .9-.1l2.9-4.9c.1-.3.1-.6-.1-.8l-3-2.4zM16 21.9c-3.2 0-5.9-2.6-5.9-5.9s2.6-5.9 5.9-5.9 5.9 2.6 5.9 5.9-2.7 5.9-5.9 5.9z"/></svg>
+                  </span>
+                  <span class="nav__name">Services</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__el">
+                    <a class="dropdown-menu__link" target="_blank" href="#">App Sale Alert</a>
+                  </li>
+                  <li class="dropdown-menu__el">
+                    <a class="dropdown-menu__link" target="_blank" href="#">Advertising</a>
+                  </li>
+                  <li class="dropdown-menu__el">
+                    <a class="dropdown-menu__link" target="_blank" href="#">App Development</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <button class="btn mobile-search" id="btn-search-mobile" type="button">
+            <span class="icon icon-search"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="search is-mobile">
+      <form class="search__form" action="#">
+        <input class="search__input"
+               type="text"
+               placeholder="Find any apps">
+        <div class="search__action">
+          <button class="btn is-search" type="button">
+            Search
+          </button>
+        </div>
+      </form>
+    </div><!-- end search -->
+  </div><!-- end container -->
+</header>
+<!-- end header -->
+<main class="main">
+  <div class="container">
+    <section class="content is-development">
+      <h1>iOS/Android App Development</h1>
+      <div class="development">
+        <h3>Mobile App Development</h3>
+        <div class="development__wrap">
+          <div class="development__left">
+            <p>We are a team of enthusiasts, and we love what we are doing. All our UX professionals, software developers, and analysts are skilled and experienced individuals with multiple successfully completed innovative projects for both iOS and Android.</p>
+            <p>You can reach us by using the contact form on the website. We will try to reply as soon as possible to discuss the details of your project. Once we are done with the details and your personal requirements, we will be ready to start working on a new solid, user-friendly app for the chosen platform – iOS or Android. Full communication and feedback review on all stages of the project will guarantee that you will have the app you wanted for your particular business needs and brand promotion.</p>
+          </div>
+          <div class="development__right">
+            <img src="../img/dev.png" alt="#">
+          </div>
+        </div>
+      </div>
+      <div class="advantages-options">
+        <div class="block-header">
+          <h2>Development Services</h2>
+        </div>
+        <div class="advantages-options__wrap">
+          <div class="option">
+            <div class="option__img">
+              <img src="../img/app_dev.png" alt="#">
+            </div>
+            <div class="option__descr">
+              <span>App development</span>
+              <p>We will do our best to provide a wide range of development services no matter the platform you choose. We are sure that even your bravest ideas can be brought to life. In the end, you will get a robust, user-friendly app to make your brand notable and attractive to users.</p>
+            </div>
+          </div>
+          <div class="option">
+            <div class="option__descr">
+              <span>Mobile UI/UX Design</span>
+              <p>Our team of seasoned UI developers and designers will utilize all their skills to create a clear, user-friendly, and attractive app that delivers a cutting-edge experience that will match your expectations.</p>
+            </div>
+            <div class="option__img">
+              <img src="../img/app_dev.png" alt="#">
+            </div>
+          </div>
+          <div class="option">
+            <div class="option__img">
+              <img src="../img/app_dev.png" alt="#">
+            </div>
+            <div class="option__descr">
+              <span>Analysis and Product Strategy</span>
+              <p>If you need additional services related to the app development process, you have come to the right place. We will analyze the market and all possible competitors in the niche you are aiming at and will develop the most effective strategy for your product.</p>
+            </div>
+          </div>
+          <div class="option">
+            <div class="option__descr">
+              <span>Prototyping and Testing</span>
+              <p>Prototyping is the best method to check what is already good enough to work in a gaming app and what should be refined. No matter the platform – Android or iOS – we can test your designs and wireframes as well.</p>
+            </div>
+            <div class="option__img">
+              <img src="../img/app_dev.png" alt="#">
+            </div>
+          </div>
+          <div class="option">
+            <div class="option__img">
+              <img src="../img/app_dev.png" alt="#">
+            </div>
+            <div class="option__descr">
+              <span>Publishing</span>
+              <p>The final stage where we are going to make sure that your app is well presented on the Google Play store and iTunes. The representation will be persuasive to convert page visits into downloads.</p>
+            </div>
+          </div>
+          <div class="option">
+            <div class="option__descr">
+              <span>Continuous Support and Additional Services</span>
+              <p>We are proud to say that all the products we release or publish meet the highest industry standards. When the app becomes available on the market, we will continue supporting it for future updates and development in progress.</p>
+            </div>
+            <div class="option__img">
+              <img src="../img/app_dev.png" alt="#">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="more-info">
+    <div class="container">
+      <h2>Want more stats and info?</h2>
+      <p>For further information and individual ideas about advertising on ZelloApps.com, please email us: advertise at ZelloApps.com.</p>
+      <div class="more-info__wrap">
+        <form class="more-info__form" action="#">
+          <div class="more-info__list">
+            <div class="more-info__el col-6">
+              <div class="field">
+                <input class="field__input" type="text" placeholder="Your name">
+              </div>
+            </div>
+            <div class="more-info__el col-6">
+              <div class="field">
+                <input class="field__input" type="text" placeholder="Your email">
+              </div>
+            </div>
+            <div class="more-info__el">
+              <div class="field">
+                <textarea class="field__area" placeholder="Your message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="more-info__action">
+            <div class="agree">
+              <label class="agree__label">
+                <input type="checkbox" checked>
+                <span></span>
+              </label>
+              <span>I have read and agree to the <a href="#">Privacy Policy</a></span>
+            </div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+        <div class="contact-details">
+          <span class="contact-details__title">Contact Details</span>
+          <span class="contact-details__text">18-21 Morley St, South Bank, London SE1 7QZ</span>
+          <a class="contact-details__mail" href="mailto:support@zelloapp.com">
+            <span class="ico is-mail"></span>
+            <span>support@zelloapp.com</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div><!-- end more-info -->
+</main>
+<footer class='footer'>
+  <div class="container">
+    <div class="footer__wrap">
+      <div class="footer__left">
+        <div class="logo">
+          <a href="#" class="logo__link">
+            <img src="img/logo_foot.svg" alt="logo-JelloApps" class="logo__img">
+          </a>
+        </div>
+      </div>
+      <div class="footer__center">
+        <div class="copyright">© 2019 ZelloApps.com. All rights reserved.</div>
+      </div>
+      <div class="footer__right">
+        <nav class="nav is-footer">
+          <ul class="nav__list">
+            <li class="nav__el">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__el">
+              <a href="#" class="nav__link">Contact Us</a>
+            </li>
+            <li class="nav__el">
+              <a href="#" class="nav__link">Privacy</a>
+            </li>
+            <li class="nav__el">
+              <a href="#" class="nav__link">Policy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div><!-- end footer__wrap -->
+  </div><!-- end container -->
+</footer><!-- end footer -->
+</body>
